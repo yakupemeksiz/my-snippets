@@ -7,7 +7,7 @@ This Visual Studio Code extension provides templates for creating a `BaseWidget`
 To install the extension, follow these steps:
 
    <ol>
-    <li>Download the latest <a href="https://www.google.com/">release</a>  to your computer</li>
+    <li>Download the latest <a href="https://github.com/yakupemeksiz/my-snippets/releases/download/0.0.1/my-snippets-0.0.1.vsix">release</a>  to your computer</li>
     <li>Open vscode extensions</li>
     <li>Install from VSIX</li>
     <li>Select VSIX file and install</li>
