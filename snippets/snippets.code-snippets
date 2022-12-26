@@ -1,0 +1,47 @@
+{
+  "Crate Base Widget": {
+    "prefix": "bw",
+    "body": [
+      "class $1Widget extends BaseWidget<$2Cubit, $2State> {",
+      "  const $1Widget ({super.key});",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context, $2Cubit cubit, $2State state) {",
+      "    return Container();",
+      "  }",
+      "}"
+    ],
+    "description": "Crate Base Widget"
+  },
+  "Create new base view": {
+    "prefix": "bv",
+    "body": [
+      "class $1View extends BaseView<$2Cubit, $2State> {",
+      " const  $1View({super.key}) : super(cubit: $2Cubit.new);",
+      "",
+      "  @override",
+      "  Widget loadingBuilder(BuildContext context) {",
+      "    // TODO: implement loadingBuilder",
+      "    // NOTE: If there is no custom loading, default loading is used",
+      "    // If there is no custom loading, you can delete this block ",
+      "    throw UnimplementedError();",
+      "  }",
+      "",
+      "  @override",
+      "  Widget loadedBuilder(BuildContext context) {",
+      "    // TODO: implement loadedBuilder",
+      "    return Container()$0;",
+      "  }",
+      "",
+      "  @override",
+      "  Widget? errorBuilder(BuildContext context, Object error) {",
+      "    // TODO: implement errorBuilder",
+      "    // NOTE: If there is no custom error, default error is used",
+      "    // If there is no custom error, you can delete this block ",
+      "    throw UnimplementedError();",
+      "  }",
+      "}"
+    ],
+    "description": "Create new base view"
+  }
+}
