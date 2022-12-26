@@ -30,7 +30,6 @@ The templates use placeholders, which you can navigate through using the `Tab` k
   The `BaseWidget` template is used to create a widget that extends the `BaseWidget` class and takes two type arguments: `$2Cubit` and `$2State`. It has a single required constructor, which takes a key parameter and passes it to the `BaseWidget` constructor. The `build` method should be implemented to return a `Widget` that represents the visual representation of the widget.
 
     <h6>Here is the template:</h6>
-     - Prefix: `bv`
 
   ```
     class $1Widget extends BaseWidget<$2Cubit, $2State> {
@@ -44,6 +43,7 @@ The templates use placeholders, which you can navigate through using the `Tab` k
   ```
 
 - <h5>Crate Base View</h5>
+  - Prefix: `bv`
 
   The `BaseView` template is used to create a view that extends the `BaseView` class and takes two type arguments: `$2Cubit` and `$2State`. It has a single required constructor, which takes a key parameter and passes it to the BaseView constructor. The BaseView also expects a Cubit instance to be passed in its constructor, which is provided through the `$2Cubit.new` expression.
 
