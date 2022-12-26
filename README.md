@@ -17,8 +17,8 @@ To install the extension, follow these steps:
 
 To use the templates, type the prefix for the desired template and press `Tab`. The prefixes for the templates are:
 
-- bw for the BaseWidget template
-- bv for the BaseView template
+- `bw` for the BaseWidget template
+- `bv` for the BaseView template
 
 The templates use placeholders, which you can navigate through using the `Tab` key.
 
