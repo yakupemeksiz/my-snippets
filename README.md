@@ -7,7 +7,7 @@ This Visual Studio Code extension provides templates for creating a `BaseWidget`
 To install the extension, follow these steps:
 
    <ol>
-    <li>Download the latest <a href="https://github.com/yakupemeksiz/my-snippets/releases/download/0.0.1/my-snippets-0.0.1.vsix">release</a>  to your computer</li>
+    <li>Download the latest <a href="https://github.com/yakupemeksiz/my-snippets/releases/latest">release</a>  to your computer</li>
     <li>Open vscode extensions</li>
     <li>Install from VSIX</li>
     <li>Select VSIX file and install</li>
@@ -32,7 +32,7 @@ The templates use placeholders, which you can navigate through using the `Tab` k
     <h6>Here is the template:</h6>
 
   ```
-    class $1Widget extends BaseWidget<$2Cubit, $2State> {
+   final class $1Widget extends BaseWidget<$2Cubit, $2State> {
       const $1Widget ({super.key});
 
       @override
@@ -50,29 +50,12 @@ The templates use placeholders, which you can navigate through using the `Tab` k
     <h6>Here is the template:</h6>
 
   ```
-    class $1View extends BaseView<$2Cubit, $2State> {
-      const  $1View({super.key}) : super(cubit: $2Cubit.new);
+    final class $1View extends BaseView<$2Cubit, $2State> {
+      $1View({super.key}) : super(cubit: getIt.call);
 
       @override
-      Widget loadingBuilder(BuildContext context) {
-        // TODO: implement loadingBuilder
-        // NOTE: If there is no custom loading, default loading is used
-        // If there is no custom loading, you can delete this block
-        throw UnimplementedError();
-      }
-
-      @override
-      Widget loadedBuilder(BuildContext context) {
-        // TODO: implement loadedBuilder
-        return Container()$0;
-      }
-
-      @override
-      Widget? errorBuilder(BuildContext context, Object error) {
-        // TODO: implement errorBuilder
-        // NOTE: If there is no custom error, default error is used
-        // If there is no custom error, you can delete this block
-        throw UnimplementedError();
+      Widget build(BuildContext context, $2Cubit cubit) {
+       return Container();
       }
     }
   ```
