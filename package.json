@@ -1,8 +1,9 @@
 {
   "name": "my-snippets",
-  "displayName": "my snippets",
-  "description": "",
-  "version": "0.0.3",
+  "displayName": "My Snippets for Dart",
+  "description": "My custom snippets",
+  "publisher": "Yakup-Emeksiz",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.74.0"
   },
